@@ -13,7 +13,11 @@ namespace Test
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration; //Modifications Par Adrian
+            Configuration = configuration; //Modifications Par Adrian this is a hotfix
+            if (Configuration==null)
+            {
+                return;
+            }
         }
 
         public IConfiguration Configuration { get; }
