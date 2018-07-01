@@ -13,7 +13,7 @@ namespace Test
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            Configuration = configuration; //Modifications Par Adrian
         }
 
         public IConfiguration Configuration { get; }
